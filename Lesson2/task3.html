@@ -6,11 +6,12 @@
 </head>
 <body>
 	<h1>Registration</h1>
+	<!--завернуть input in value -->
 	<form name="registration" action="/">
-		<p>Name:<br />
-		<input type="text" name="name" value="name" autofocus /><br />
-		Email:<br />
-		<input type="email" name="email" value="email" /></p>
+		<value>Name:<br />
+		<input type="text" name="name" autofocus /></value><br />
+		<value>Email:<br />
+		<input type="email" name="email" /></value>
 		<p>Sex:<br />
 		<input type="radio" name="sex" value="male" />Male
 		<input type="radio" name="sex" value="female" />Female</p>
@@ -18,6 +19,7 @@
 		<input type="checkbox" name="status" value="student" />Student<br />
 		<input type="checkbox" name="status" value="employed" />Employed<br />
 		<input type="checkbox" name="status" value="unemployed" />Unemployed</p>
+		<!--Также можно реализовать использую <select>-->
 		<p>Month and a year of birth:<br />
 		<input type="date" name="date_of_birth" value="date" /></p>
 		<p>Skills and Technologies<br />
