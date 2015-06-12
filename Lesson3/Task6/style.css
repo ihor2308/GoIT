@@ -56,9 +56,6 @@ label[for="blue"]{
 	display: none;
 }
 
-input[type="checkbox"]::checked + #red {
-	color: black;
-}
 
 #red:checked ~ label[for="red"] {
 	color: #ff9999;
