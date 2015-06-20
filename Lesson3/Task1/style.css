@@ -30,7 +30,7 @@ div#warehouse > h2 {
 	color: red;
 }
 
-ul {
+ul li{
 	font-weight: bold;
 }
 

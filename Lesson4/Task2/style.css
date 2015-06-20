@@ -1,32 +1,39 @@
 .navigation {
 	background-color: #a64dff;
-	margin: 0 -10px;
 	height: 40px;
+	margin: 0 -10px;
 }
 
 .navigation__nav {
 	width: 900px;
 	margin: auto;
-	
 }
 
 .navigation__menu {
-	margin: 0;
+	margin-top: 0;
 	padding: 0;
 }
 
 .navigation__item {
-	display: inline-block;
-	padding: 10px 0;
-}
+	list-style-type: none;
 
+}
 .navigation__link {
-	font-family: Impact;
 	text-decoration: none;
 	text-transform: uppercase;
+	font-family: Impact;
 	color: #ffffff;
 	padding: 10.5px;
 }
+
+.link-float-left {
+	float: left;
+}
+
+.link-float-right {
+	float: right;
+}
+
 
 .navigation__link:hover {
 	background-color: #eeeeee;
