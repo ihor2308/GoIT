@@ -1,0 +1,144 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Trebuchet MS;
+}
+
+.container {
+	height: 315px;
+	background: url(img/bg.png);
+	background-position: top;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.container__header {
+	font-size: 40px;
+	text-transform: uppercase;
+	color: #3170a8;
+	text-align: center;
+	margin: 40px 0 40px 0;
+}
+
+.header-orange {
+	font-size: 40px;
+	text-transform: uppercase;
+	color: #ee8129; 
+}
+
+.staciya, .david {
+	display: inline-block;
+	position: relative;
+}
+
+.staciya::before {
+	content: url(img/staciya.png);
+	margin-left: 120px;
+}
+
+.david::before {
+	content: url(img/david.png);
+	margin-left: 515px;
+}
+
+.staciya__comment {
+   width: 360px;
+   height: 100px;
+   background: #ffffff;
+   position: absolute;
+   left: 250px;
+   top: 0.5px;
+   display: inline-block;
+   border: 2px solid #d6d6d6;
+}
+
+.staciya__comment::before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 15px solid #ffffff;
+   border-bottom: 13px solid transparent;
+}
+
+.david__comment {
+	width: 360px;
+   height: 100px;
+   background: #ffffff;
+   position: absolute;
+   left: 645px;
+   top: 0.5px;
+   display: inline-block;
+   border: 2px solid #d6d6d6;
+}
+
+.david__comment::before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 15px solid #ffffff;
+   border-bottom: 13px solid transparent;
+}
+
+.staciya__info {
+	font-size: 13px;
+	color: #3070a8;
+	font-style: italic;	
+}
+
+.staciya__info::before {
+	content: "- Staciya Trollio ";
+	position: relative;
+	left: 15px;
+	top: 10px;
+}
+
+.staciya__info::after {
+	content: "Customer";
+	position: relative;
+	left: 190px;
+	top: 10px;
+}
+
+.david__info {
+	font-size: 13px;
+	color: #3070a8;
+	font-style: italic;	
+}
+
+.david__info::before {
+	content: "- David Soul ";
+	position: relative;
+	left: 15px;
+	top: 10px;
+}
+
+.david__info::after {
+	content: "Customer";
+	position: relative;
+	left: 213px;
+	top: 10px;
+}
+
+.staciya__content::before{
+	content: attr(data-usercom);
+	font-size: 13px;
+	color: #666666;
+	position: relative;
+	left: 15px;
+}
+
+.user__border {
+	margin: 20px 15px 10px 15px;
+	border-top: 1px dotted;
+	color: #666666;
+}

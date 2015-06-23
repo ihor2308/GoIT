@@ -19,8 +19,12 @@
 
 .navbar__submenu {
 	display: none;
+	position: absolute;
+	left: 270px;
+	top: 48px;
 	background-color: #eeeeee;
 	margin: 0;
+	padding: 0;
 	height: 30px;
 	width: 900px;
 }
@@ -60,6 +64,10 @@
 	text-decoration: underline;
 }
 
-.main__link:hover .navbar__submenu {
+.main__link:hover ~ .navbar__submenu {
+	display: block;
+}
+
+.main__link:focus ~ .navbar__submenu {
 	display: block;
 }
