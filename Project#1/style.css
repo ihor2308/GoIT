@@ -484,6 +484,14 @@ body {
 
 }
 
+.address_sp {
+	padding-left: 37px;
+}
+
+.address_sp-p {
+	padding-top: 10px;
+}
+
 .contact_img {
 	padding-right: 15px;
 }
