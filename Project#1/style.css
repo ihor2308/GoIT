@@ -1,3 +1,9 @@
+/*Пробовал сделать через flex...не знаю насколько у меня это получилось. По возможности, прошу предоставить развернутые комментарии.
+Основные вопросы, которые возникли:
+1 - Если внутри div, display:flex вложенный другой div, то для дочерних элеметов нужно отдельно задавать display:flex?
+2 - Если в качестве фона у нас картинка, как ее полностью отобразить, чтобы не задавать фиксированную ширину?
+3 - Как все-таки правильно задать ширину блоков внутри блока flex? К примеру, нужно 3 инлайновых блока, а под ними 1 с шириной 100%.*/
+
 body {
 	margin: 0;
 	font-family: Verdana, "Trebuchet MS", Arial
@@ -27,7 +33,6 @@ body {
 	color: #0D47A1;
 	text-transform: uppercase;
 }
-
 
 .header__navigation {
 	flex: 3;
@@ -481,4 +486,37 @@ body {
 
 .contact_img {
 	padding-right: 15px;
+}
+
+.contacts_social {
+	height: 46px;
+	width: 46px;
+	margin-top: 20px;
+	margin-right: 15px;
+}
+
+.copyright {
+	background-color: #3070a8;
+	flex-basis: 100%;
+	color: #ffffff;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer_copy {
+	margin: 20px 0 0 0;
+	flex-basis: 100%;
+	text-align: center;
+}
+
+.footer_designed {
+	margin-bottom: 30px;
+	flex-basis: 100%;
+	text-align: center;
+}
+
+.footer_link {
+	text-decoration: none;
+	color: #000000;
+	font-weight: 500;
 }
