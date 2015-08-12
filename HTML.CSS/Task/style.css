@@ -1,0 +1,11 @@
+.user1, .user2, .user3, .user4 {
+	display: inline-block;
+	width: 50%;
+}
+
+img {
+	border-radius: 110px;
+}
+p {
+	display: inline-block;
+}

@@ -1,0 +1,14 @@
+a[href*="ya"] {
+	color: #f70;
+}
+
+a[href*="google"] {
+	color: #666;
+}
+
+a[href="http://maps.yandex.ru"]::after {
+	content: " ⇱";
+	position: absolute;
+	text-decoration: none;
+	transform: rotate(90deg);
+}
