@@ -1,0 +1,41 @@
+@import compass/reset
+
+$orange: #ed6800
+$blue: #009cad
+$red: #c9252c
+
+=vendor($property, $value)
+  -webkit-#{$property}: $value
+  -moz-#{$property}: $value
+  -ms-#{$property}: $value
+  -o-#{$property}: $value
+  #{$property}: $value
+
+.hexagon-big
+  width: 340px
+  height: 205px
+  background: $orange
+  position: relative
+  margin: 150px auto
+
+.hexagon-big:before
+  content: ""
+  position: absolute
+  top: -100px
+  left: 0
+  width: 0
+  height: 0
+  border-left: 170px solid transparent
+  border-right: 170px solid transparent
+  border-bottom: 100px solid $orange
+
+.hexagon-big:after
+  content: ""
+  position: absolute
+  bottom: -100px
+  left: 0
+  width: 0
+  height: 0
+  border-left: 170px solid transparent
+  border-right: 170px solid transparent
+  border-top: 100px solid $orange

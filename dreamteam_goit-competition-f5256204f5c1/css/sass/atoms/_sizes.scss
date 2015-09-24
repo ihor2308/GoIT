@@ -1,0 +1,20 @@
+@mixin width($value: auto) {
+	width: $value;
+}
+@mixin height($value: auto) {
+	height: $value;
+}
+@mixin size($wValue: auto, $hValue: auto) {
+	width: $wValue;
+	height: $hValue;
+}
+%size-fill                          { width: 100%; height: 100%; }
+%size-fill-horizontal               { width: 100%; }
+%size-fill-vertical                 { height: 100%; }
+
+%min-size-vertical                  { min-height: 100% }
+
+%height-auto                        {height: auto;}
+
+%no-size-h                          {width: 0;}
+%no-size-v                          {height: 0;}

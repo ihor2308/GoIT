@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript. Lesson#4. Task#2</title>
+</head>
+<body>
+	<script>
+	function checkSpam(str) {
+		var lowstr = str.toLowerCase();
+		return (~lowstr.indexOf("spam") || ~lowstr.indexOf("sex"))?true:false;
+	}
+	alert(checkSpam('get new Sex videos'));
+	alert(checkSpam('[SPAM] How to earn fast money?'));
+	alert(checkSpam('New PSD template'));
+	</script>
+</body>
+</html>

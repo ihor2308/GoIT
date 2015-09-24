@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript. Lesson#3. Task#6</title>
+</head>
+<body>
+	<script>
+	var x=+prompt("Введите число:", 0);
+	var n=+prompt("Введите степень:", 0);
+	function pow(x, n) {
+  		var result = x;
+  		for (var i = 1; i < n; i++) {
+   			 result *= x;
+  		}
+  		return result;
+	}
+	alert(pow(x,n));
+	</script>
+</body>
+</html>

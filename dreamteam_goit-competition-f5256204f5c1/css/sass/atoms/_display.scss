@@ -1,0 +1,26 @@
+%none-dsp {
+	display: none;
+}
+%block {
+	display: block;
+}
+%inline {
+	display: inline;
+}
+%inline-block {
+	display: inline-block;
+}
+%table{
+	display: table;
+}
+%table-row{
+	display: table-row;
+}
+%table-cell{
+	display: table-cell;
+}
+%border-box {
+	@include vendor(box-sizing, border-box);
+}
+@include generate-placeholder-overflow('overflow');
+%content { content: ""; }

@@ -1,0 +1,14 @@
+@import "reset/_reset";                     // reset
+
+@import "_config";                           // Generation placeholders, mixins(default functions)
+@import "_common";                           // Generation placeholders, mixins(default functions)
+
+@import "atoms/_parts_include";              // Atoms
+
+@import "compass";
+$icons-layout: smart;// smart, horizontal
+$icons-sprite-dimensions: true;//false
+$icons-sprite-base-class: ".un-ico";
+$disable-magic-sprite-selectors: false;
+@import "landing/*.png";
+@include all-landing-sprites();

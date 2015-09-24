@@ -1,0 +1,20 @@
+%clearfix {
+    display: block!important;
+    margin: 0!important;
+    padding: 0!important;
+    clear: both!important;
+    float: none!important;
+    width: 100%!important;
+    height: 0!important;
+    border: 0 none!important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -ms-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}

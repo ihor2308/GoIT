@@ -1,0 +1,18 @@
+%static {
+    position: static;
+}
+%relative {
+    position: relative;
+}
+%absolute {
+    position: absolute;
+}
+
+%fixed {
+    position: fixed;
+}
+@include generate-placeholder('z-index', 0, 100, null, '');
+@include generate-placeholder('top', 0, 100, null, '');
+@include generate-placeholder('right', 0, 100, null, '');
+@include generate-placeholder('bottom', 0, 100, null, '');
+@include generate-placeholder('left', 0, 100, null, '');

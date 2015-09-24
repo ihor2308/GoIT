@@ -1,0 +1,82 @@
+%thin {
+	font-weight: $font_w_thin;
+}
+%normal {                                                           
+	font-weight: $font_w_normal;
+}
+%bold {
+	font-weight: $font_w_bold;
+}
+%bold-x {
+	font-weight: $font_w_x_bold;
+}
+%bold-xx {
+	font-weight: $font_w_xx_bold;
+}
+%italic {
+  	font-style: italic;
+}
+%underline {
+	text-decoration: underline;
+}
+%no-underline {
+	text-decoration: none;
+}
+%strike {
+	text-decoration: line-through;
+}
+%overline {
+	text-decoration: overline;
+}
+%no-overline {
+	text-decoration: none;
+}
+%uppercase {
+	text-transform: uppercase;
+}
+%justify {
+	text-align: justify;
+}
+%left-text {
+	text-align: left;
+}
+%right-text {
+	text-align: right;
+}
+%center-text {
+	text-align: center;
+}
+%vertical-top {
+	vertical-align: top;
+}
+%no-style {
+	font-style: normal;
+}
+%word-wrap {
+	word-wrap: break-word;
+}
+%normal-wrap {
+	white-space: normal;
+}
+%nowrap {
+	white-space: nowrap;
+}
+%outline-none {
+	outline: none;
+}
+
+%font_size_default {
+        font-size: 62.5%;
+}
+
+%noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@include generate-placeholder('font-size', 1, 100, true, 'em');
+@include generate-placeholder('font-size', 1, 100, true, 'px');
+@include generate-placeholder('line-height', 1, 100,null,'');

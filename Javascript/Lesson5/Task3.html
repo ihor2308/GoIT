@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript. Lesson#5. Task#3</title>
+</head>
+<body>
+	<script>
+	function isNumeric(n) {
+		return !isNaN(parseFloat(n)) && isFinite(n);
+	}
+
+	var arr = [];
+	var sum = 0;
+	
+	for (var num = 0; num != null; ) {
+		num = prompt("Enter a number:", 0);
+		if (isNumeric(num)) {
+		arr.push(+num);
+		} else {
+			break;
+		}
+	}
+
+	for (var i = 0; i < arr.length; i++) {
+		sum+=arr[i];
+	}
+
+	alert(sum);
+	
+	</script>
+</body>
+</html>

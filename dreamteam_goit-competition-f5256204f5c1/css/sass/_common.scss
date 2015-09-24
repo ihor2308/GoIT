@@ -1,0 +1,51 @@
+// ****** generates placeholders
+@mixin generate-placeholder($property, $from: 0, $to: 0, $flag: null, $unit: px) {
+    @if $property == line-height or $property == font-size {
+        @for $i from $from through $to {
+            @if $flag {
+                %#{$property}-#{$i}-#{$unit} { #{$property}: #{$i/10}#{$unit}; }                
+            } @else {
+                %#{$property}-#{$i} { #{$property}: #{$i/10}; }                
+            }
+	}
+    } @else {
+	@for $i from $from through $to {
+            %#{$property}-#{$i} { #{$property}: #{$i}#{$unit}; }
+	}
+    }
+}
+// ****** generates placeholders z-index
+@mixin generate-placeholder-z-index($property, $from: 0, $to: 0) {
+    @for $i from $from through $to {
+        %#{$property}-#{$i} { #{$property}: #{$i}; }
+    }
+}
+
+// ****** generates overflow
+@mixin generate-placeholder-overflow($property, $coord: (x,y,''),$prop: (auto,hidden,visible,scroll)) {
+    @each $v in ($coord) {
+        @if $v != x and $v != y {
+            @each $val in $prop{
+                %#{$property}-#{$val} { #{$property}: #{$val}; }
+            }
+        } @else {
+            @each $val in $prop{
+                %#{$property}-#{$v}-#{$val} { #{$property}-#{$v}: #{$val}; }
+            }
+        }
+    }
+}
+
+// ****** defining atom
+@mixin define-atom($name) {
+    %#{$name} {
+            @content;
+    }
+}
+// ****** atoms
+@mixin atoms($collection: ()) {
+    @each $el in $collection {
+            @extend %#{$el};
+    }
+    @content;
+}
